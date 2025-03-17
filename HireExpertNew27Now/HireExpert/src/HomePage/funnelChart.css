@@ -1,0 +1,113 @@
+.hire-funnel-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hire-funnel-header {
+    margin-bottom: 24px;
+}
+
+.hire-funnel-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+.hire-funnel-subtitle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hire-funnel-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.hire-success-badge {
+    background-color: #e8f0fe;
+    padding: 8px 16px;
+    border-radius: 24px;
+}
+
+.hire-success-badge span {
+    color: #1967d2;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.hire-funnel-chart-container {
+    height: 400px;
+}
+
+.hire-funnel-legend {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.hire-legend-items {
+    display: flex;
+    gap: 32px;
+}
+
+.hire-legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.hire-legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.hire-legend-label {
+    color: #444;
+    font-size: 14px;
+}
+
+.hire-tooltip {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.hire-tooltip-title {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 4px 0;
+}
+
+.hire-tooltip-desc {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hire-funnel-container {
+        padding: 16px;
+    }
+
+    .hire-funnel-chart-container {
+        height: 300px;
+    }
+
+    .hire-legend-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

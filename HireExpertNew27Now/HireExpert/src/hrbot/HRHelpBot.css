@@ -1,0 +1,148 @@
+.hire-helpbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hire-helpbot-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.hire-helpbot-button:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+}
+
+.hire-helpbot-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hire-helpbot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #0066cc;
+    color: white;
+}
+
+.hire-helpbot-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.hire-helpbot-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.hire-helpbot-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #f8f9fa;
+}
+
+.hire-helpbot-message {
+    padding: 12px 16px;
+    border-radius: 12px;
+    max-width: 85%;
+    line-height: 1.4;
+}
+
+.hire-bot-message {
+    background-color: #e8f0fe;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.hire-user-message {
+    background-color: #0066cc;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.hire-helpbot-input {
+    display: flex;
+    padding: 16px;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+}
+
+.hire-helpbot-input input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 24px;
+    outline: none;
+    font-size: 1em;
+    background-color: white;
+    color: #000;
+}
+
+.hire-helpbot-input input:focus {
+    border-color: #0066cc;
+}
+
+.hire-helpbot-input button {
+    background: none;
+    border: none;
+    color: #0066cc;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hire-helpbot-suggestions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    padding: 0 16px 16px;
+}
+
+.hire-helpbot-suggestion {
+    background-color: #e8f0fe;
+    color: #0066cc;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: 1px solid #cce0fd;
+}
+
+.hire-helpbot-suggestion:hover {
+    background-color: #d6e6fd;
+}

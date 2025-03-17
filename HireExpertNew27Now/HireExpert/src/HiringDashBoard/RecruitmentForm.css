@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+button:focus{
+  outline: none; 
+  box-shadow: none;
+}
+
+.form-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.filter-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 550px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0px 0px 15px rgba(0, 255, 200, 0.5); */
+  overflow: hidden;
+}
+
+.inside-filter-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+  align-items: start;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  background: #ffffff;
+  border: 1px solid #00ffc8;
+  /* color: brown; */
+  color: black;
+  font-size: larger;
+  border-radius: 5px;
+  outline: none;
+}
+
+.multi-select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  background: #ffffff;
+  border: 1px solid #00ffc8;
+  font-size: larger;
+  color: salmon;
+  font-weight: 700;
+  border-radius: 5px;
+  outline: none;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 10px;
+  /* background: linear-gradient(45deg, #00ffc8, #3700ff); */
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  /* box-shadow: 0px 0px 10px rgba(0, 255, 200, 0.8); */
+  background-color: #007bff;
+}
+
+/* ..................*/
+
+/* Background Overlay */
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+/* Form Container */
+.form-container {
+  background: white;
+  width: 550px;
+  /* Increased width */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels */
+label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #444;
+}
+
+/* Input Fields */
+.input-field,
+.multi-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Textarea */
+.textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Input & Select Focus */
+.input-field:focus,
+.multi-select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.recruits-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  /* padding: 20px; */
+  justify-content: center;
+}
+
+.hire-recruits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hire-recruit-card {
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 98%;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.hire-recruit-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hire-description {
+  color: #666;
+  margin: 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hire-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.recr-btn{
+  background-color: white;
+  /* color: black; */
+  color: #6B6B6B;
+  outline: none; 
+}
+
+.recr-btn:focus {
+  outline: none;  /* Ensures no outline on focus */
+  box-shadow: none;  /* Removes any default focus shadow */
+}
+
+.hire-actions{
+  display: flex;
+  /* align-items: end; */
+  justify-content: flex-end;
+}
+
+
+
+
+/* vyfgbhnjdhfugchds */
+
+.status-tag-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.status-tag {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.status-open {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.status-in-progress {
+  background-color: #FFA500;
+  color: white;
+}
+
+.status-closed {
+  background-color: #1cb97d;
+  color: white;
+}
+
+.status-default {
+  background-color: #808080;
+  color: white;
+}
+
+.created-at {
+  font-size: 12px;
+  color: #666;
+  /* color: #0056b3; */
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+

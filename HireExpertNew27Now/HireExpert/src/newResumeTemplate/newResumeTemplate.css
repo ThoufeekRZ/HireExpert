@@ -1,0 +1,319 @@
+.temp-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.temp-modal-content {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 48rem;
+    margin: 0 1rem;
+    z-index: 10;
+    overflow: hidden;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.temp-modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temp-modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+}
+
+.temp-modal-subtitle {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.temp-close-btn {
+    color: #6b7280;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp-close-btn:hover {
+    color: #1f2937;
+}
+
+.temp-close-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.temp-modal-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: calc(90vh - 11rem);
+}
+
+.temp-resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.temp-section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 0.75rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.temp-info-item {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.temp-info-label {
+    color: #6b7280;
+    font-weight: 500;
+    margin-right: 0.25rem;
+}
+
+.temp-info-value {
+    color: #1f2937;
+}
+
+.temp-match-score-details {
+    margin-bottom: 1rem;
+}
+
+.temp-score-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.375rem;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.temp-score-percent {
+    font-weight: 600;
+}
+
+.temp-detailed-score-bar {
+    height: 0.5rem;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.temp-detailed-score-fill {
+    height: 100%;
+    border-radius: 9999px;
+}
+
+.temp-current-status {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.temp-status-label {
+    color: #6b7280;
+    font-weight: 500;
+    margin-right: 0.25rem;
+}
+
+.temp-status-badge-small {
+    font-size: 0.65rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    padding: 0.2rem 0.5rem;
+    display: inline-block;
+}
+
+.temp-skills-section,
+.temp-experience-section,
+.temp-education-section {
+    margin-top: 1.5rem;
+}
+
+.temp-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.temp-skill-tag-lg {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.temp-experience-item,
+.temp-education-item {
+    border-left: 2px solid #e5e7eb;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.temp-experience-item::before,
+.temp-education-item::before {
+    content: '';
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    left: -0.4375rem;
+    top: 0.75rem;
+}
+
+.temp-job-title,
+.temp-degree {
+    font-weight: 500;
+    color: #1f2937;
+    font-size: 1rem;
+}
+
+.temp-company-name,
+.temp-university {
+    color: #4b5563;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.temp-job-period {
+    color: #6b7280;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.temp-job-description {
+    margin-top: 0.5rem;
+    color: #4b5563;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.temp-modal-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temp-action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.temp-reject-btn,
+.temp-shortlist-btn,
+.temp-schedule-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.temp-reject-btn {
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    background-color: white;
+}
+
+.temp-reject-btn:hover {
+    background-color: #fee2e2;
+}
+
+.temp-shortlist-btn {
+    border: 1px solid #10b981;
+    color: #10b981;
+    background-color: white;
+}
+
+.temp-shortlist-btn:hover {
+    background-color: #d1fae5;
+}
+
+.temp-schedule-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.temp-schedule-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .temp-resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .temp-controls {
+        flex-direction: column;
+    }
+
+    .temp-filter-wrapper {
+        width: 100%;
+    }
+
+    .temp-filter,
+    .temp-sort {
+        flex: 1;
+    }
+
+    .temp-modal-footer {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .temp-action-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .temp-schedule-btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .temp-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

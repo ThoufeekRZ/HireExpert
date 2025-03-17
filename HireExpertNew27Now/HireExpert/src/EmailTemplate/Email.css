@@ -1,0 +1,452 @@
+/* InterviewEmailTemplate.css */
+.email-template-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 2000px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+    .email-template-container {
+        flex-direction: column;
+    }
+}
+
+/* Form Styling */
+.form-section {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    color: black;
+}
+
+.form-group textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Email Preview Styling */
+.preview-section {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preview-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Copy Button Styling */
+.copy-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: #2980b9;
+}
+
+.email-preview {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.email-subject {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.email-body {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.email-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.email-header h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.email-header h2 {
+    color: #3498db;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.email-content {
+    line-height: 1.6;
+    color: #333;
+}
+
+.interview-details {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.interview-details h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.interview-details ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.interview-details li {
+    margin-bottom: 5px;
+}
+
+.additional-info {
+    background-color: #f8f9fa;
+    border-left: 4px solid #2ecc71;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.additional-info h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.email-signature {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    color: #555;
+}
+
+.signature-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.signature-title,
+.signature-company,
+.signature-phone,
+.signature-email {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.email-footer {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+}
+.email-big-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prview-back-btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+}
+
+.send-mail-button {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Green gradient */
+    color: white; /* Text color */
+    padding: 12px 24px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.2s, box-shadow 0.3s; /* Smooth animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.send-mail-button:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    background: linear-gradient(135deg, #45A049, #1B5E20); /* Darker gradient */
+}
+
+.send-mail-button:active {
+    transform: translateY(1px); /* Push down effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+.send-mail-button:disabled {
+    background: #BDBDBD; /* Grey out when disabled */
+    cursor: not-allowed; /* Disable cursor */
+    box-shadow: none; /* No shadow */
+}
+
+.back-mail-btn {
+    background: linear-gradient(135deg, #FF6F61, #D84315); /* Reddish gradient */
+    color: white; /* White text */
+    padding: 12px 24px; /* Button padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.2s, box-shadow 0.3s; /* Smooth animations */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    display: inline-flex; /* For icon alignment */
+    align-items: center; /* Center content */
+    gap: 8px; /* Space between icon and text */
+}
+
+.back-mail-btn:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    background: linear-gradient(135deg, #E64A45, #BF360C); /* Darker gradient */
+}
+
+.back-mail-btn:active {
+    transform: translateY(1px); /* Press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+.back-mail-btn:disabled {
+    background: #BDBDBD; /* Greyed out when disabled */
+    cursor: not-allowed; /* Disable cursor */
+    box-shadow: none; /* Remove shadow */
+}
+
+.email-btn {
+    background-color: #4A90E2; /* Professional blue */
+    color: white; /* White text for contrast */
+    border: none; /* Clean borderless style */
+    padding: 12px 24px; /* Balanced padding */
+    font-size: 16px; /* Readable font size */
+    font-weight: 600; /* Bold for emphasis */
+    border-radius: 8px; /* Smooth rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth animations */
+    cursor: pointer; /* Pointer on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+  }
+  
+  .email-btn:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift */
+  }
+  
+  .email-btn:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+  }
+  
+  .email-btn:disabled {
+    background-color: #B0C4DE; /* Muted blue for disabled */
+    color: #E0E0E0; /* Lightened text */
+    cursor: not-allowed; /* Disable pointer */
+    box-shadow: none; /* Remove shadow */
+  }
+
+  
+ /* EmailSendAnimation.css */
+@keyframes sendem-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes sendem-progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes sendem-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sendem-popup {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sendem-email-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    position: relative;
+    animation: sendem-pulse 2s infinite;
+}
+
+.sendem-email-icon svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.sendem-loading-text {
+    font-size: 18px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.sendem-progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.sendem-progress-bar-fill {
+    width: 0;
+    height: 100%;
+    background-color: #2563eb;
+    animation: sendem-progress 3s linear forwards;
+}
+
+.sendem-email-details {
+    background-color: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sendem-email-details p {
+    margin: 5px 0;
+    color: #4a5568;
+}
+
+.sendem-success-state {
+    animation: sendem-fade-in 0.5s forwards;
+}
+
+.sendem-success-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.sendem-success-icon svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.sendem-success-text {
+    color: #10b981;
+}
+
+.sendem-bg{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

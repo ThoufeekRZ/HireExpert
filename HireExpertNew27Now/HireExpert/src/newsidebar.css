@@ -1,0 +1,110 @@
+.add{
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.account{
+    font-size: 3em;
+    color: rgb(16, 23, 105);
+}
+
+.profile{
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.midContainer{
+    height: auto;
+    width: 95%;
+    border: 2px solid rgb(219, 212, 212);
+    border-radius: 15px;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px;
+}
+
+.midContainer2{
+    height: auto;
+    width: 95%;
+    border: 2px solid rgb(219, 212, 212);
+    border-radius: 15px;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px;
+    flex-direction: column;
+}
+
+
+.imgDiv{
+    height: 90%;
+    width: 20%;
+    /* border: 2px solid black; */
+    margin-left: 30px;
+    line-height: 40px;
+    padding: 20px;
+}
+
+.obacity{
+    opacity: 0.7;
+    font-size: 1.2em;
+}
+
+.edit{
+    margin-left: 1300px;
+    height: 50px;
+    width: 100px;
+    border: 2px solid rgb(61, 58, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.edit1{
+    height: 50px;
+    width: 100px;
+    border: 2px solid rgb(61, 58, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.midHead{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details{
+    height: 250px;
+    width: 20%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-direction: column;
+}
+
+
+.midHead1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* margin-left: 0px; */
+    /* justify-content: space-between; */
+}
+
+.margin{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,315 @@
+.landing-container {
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+}
+
+.landing-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.landing-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.landing-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.landing-nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.landing-nav-link {
+    color: white;
+    text-decoration: none;
+    background: black;
+    font-weight: 500;
+    /* font-size: 1.3rem; */
+}
+
+.landing-hero {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.landing-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.landing-hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.landing-hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #e5e5e5;
+}
+
+.landing-upload-section {
+    border: 2px dashed #3b82f6;
+    padding: 3rem;
+    border-radius: 1rem;
+    background: rgba(59, 130, 246, 0.1);
+    max-width: 600px;
+    margin: 3rem auto;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.landing-upload-section:hover {
+    background: rgba(59, 130, 246, 0.15);
+}
+
+.landing-upload-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #3b82f6;
+}
+
+.landing-upload-text {
+    font-size: 1.25rem;
+    color: #3b82f6;
+    margin-bottom: 0.5rem;
+}
+
+.landing-upload-subtext {
+    color: #6b7280;
+}
+
+.landing-features {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.landing-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.landing-feature-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.landing-feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.landing-feature-icon {
+    font-size: 2rem;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+}
+
+.landing-feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.landing-feature-description {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.landing-process {
+    padding: 5rem 2rem;
+    background: #f3f4f6;
+}
+
+.landing-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: #111827;
+}
+
+.landing-process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.landing-process-step {
+    text-align: center;
+    padding: 2rem;
+}
+
+.landing-step-number {
+    width: 3rem;
+    height: 3rem;
+    background: #3b82f6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.landing-step-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.landing-step-description {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.landing-cta {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #1f2937;
+    color: white;
+}
+
+.landing-cta-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.landing-cta-subtitle {
+    font-size: 1.25rem;
+    color: #e5e5e5;
+    margin-bottom: 2rem;
+}
+
+.landing-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.landing-button:hover {
+    background: #2563eb;
+}
+
+.landing-footer {
+    background: #111827;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.landing-footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.landing-footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.landing-footer-link {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+.landing-footer-text {
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    .landing-nav-links {
+        display: none;
+    }
+
+    .landing-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .landing-hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .landing-upload-section {
+        margin: 2rem 1rem;
+        padding: 2rem;
+    }
+}
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 400px;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+

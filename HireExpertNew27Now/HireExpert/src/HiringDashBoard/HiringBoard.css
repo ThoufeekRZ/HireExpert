@@ -1,0 +1,184 @@
+
+
+.board-card {
+  background: white;
+  border-radius: 8px;
+  width: calc(100dvw - 300px);
+  height: 100dvh;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.board-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.add-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  width: 148px;
+}
+
+.add-button:hover {
+  background: #1d4ed8;
+}
+
+.search-filter-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .search-filter-container {
+    flex-direction: row;
+  }
+}
+
+.search-container {
+  position: relative;
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  padding-left: 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background-color: white;
+  color: black;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.status-filter {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  min-width: 150px;
+  background-color: #2563EB;
+}
+
+.table-container {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recruits-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.recruits-table th,
+.recruits-table td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.recruits-table th {
+  font-weight: 600;
+  color: #374151;
+}
+
+.recruits-table tr:hover {
+  background-color: #f9fafb;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status-inprogress {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-hired {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background-color: white;
+}
+
+.submit-button {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.submit-button:hover {
+  background: #1d4ed8;
+}
